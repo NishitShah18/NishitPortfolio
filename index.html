@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nishit Shah</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nishit Shah</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="Nishit Shah profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nishit Shah</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Nishit Resume.pdf')"
+          >
+            <div style="font-size: 16px">
+              Resume<img
+                src="./assets/arrow-up-right-from-square.svg"
+                alt="Resume Icon"
+                class="icon"
+              />
+            </div>
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href='./index.html#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/nishit-shah-043518229/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/NishitShah18'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container" data-category="skills">
+          <div class="about-containers">
+            <div class="details-container" data-category="skills">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4 Months CO-OP <br />Software Developer</p>
+            </div>
+            <div class="details-container" data-category="skills">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Computer Programming/Analysis - Advanced Diploma <br />Seneca
+                College
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a motivated Full Stack Developer with expertise in both
+              frontend and backend technologies, including C, C++, Java, Python,
+              React, Vue.js, Node.js, and more. With experience in cloud
+              platforms like Microsoft Azure and AWS, I excel at building
+              responsive, user-friendly applications and optimizing processes
+              through automation. I thrive in agile environments, collaborating
+              with teams to deliver efficient, high-quality solutions. Driven by
+              a passion for continuous learning, I bring strong problem-solving
+              skills, attention to detail, and a commitment to best practices in
+              every project I undertake.
+            </p>
+            <br />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+
+      <div class="experience-details-container two-column-layout">
+        <div class="details-container" data-category="skills">
+          <h2 class="experience-sub-title">Programming Languages</h2>
+          <ul>
+            <li>C, C++, Java 8, Python, C#, PHP</li>
+          </ul>
+        </div>
+        <div class="details-container" data-category="skills">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <ul>
+            <li>
+              HTML5, CSS3, SASS, JavaScript, jQuery, AJAX, JSON, React, Vue.js,
+              Angular, Bootstrap
+            </li>
+          </ul>
+        </div>
+        <div class="details-container" data-category="skills">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <ul>
+            <li>Node.js, Express.js, ASP.NET, PHP, Next.js, Flask</li>
+          </ul>
+        </div>
+        <div class="details-container" data-category="skills">
+          <h2 class="experience-sub-title">Databases</h2>
+          <ul>
+            <li>
+              SQL (Oracle, MySQL, PostgreSQL), MongoDB, Cosmos DB, Azure SQL
+            </li>
+          </ul>
+        </div>
+        <div class="details-container" data-category="skills">
+          <h2 class="experience-sub-title">Cloud & DevOps</h2>
+          <ul>
+            <li>Microsoft Azure, AWS, Docker, GitHub Actions</li>
+          </ul>
+        </div>
+        <div class="details-container" data-category="skills">
+          <h2 class="experience-sub-title">Testing & Collaboration</h2>
+          <ul>
+            <li>Jest, HURL, xUnit, MSTest</li>
+            <li>Git, GitHub, Azure DevOps, SharePoint</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button
+          class="btn btn-color-2 project-btn active"
+          onclick="filterProjects('all', this)"
+        >
+          All
+        </button>
+        <button
+          class="btn btn-color-2 project-btn"
+          onclick="filterProjects('fullstack', this)"
+        >
+          Fullstack
+        </button>
+        <button
+          class="btn btn-color-2 project-btn"
+          onclick="filterProjects('backend', this)"
+        >
+          Backend
+        </button>
+        <button
+          class="btn btn-color-2 project-btn"
+          onclick="filterProjects('ios', this)"
+        >
+          iOS
+        </button>
+      </div>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Project 1 -->
+          <div
+            class="details-container color-container"
+            data-category="backend"
+          >
+            <h2 class="experience-sub-title project-title">
+              Assembly Line Simulation
+            </h2>
+            <p>
+              A C++ simulation of an assembly line system to manage tasks,
+              automate workflows, and process items through a chain of
+              operations.
+            </p>
+            <br />
+            <p>
+              <strong>Technologies:</strong> C++, Standard Template Library
+              (STL), File I/O
+            </p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NishitShah18/Assembly-Line-Simulation'"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="details-container color-container" data-category="ios">
+            <h2 class="experience-sub-title project-title">Recipe App</h2>
+            <p>
+              An iOS application designed to browse different recipies and
+              provides a timer to use.
+            </p>
+            <br />
+            <p><strong>Technologies:</strong> Swift, Xcode, UIKit</p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NishitShah18/Recipe-App'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://seneca-my.sharepoint.com/:v:/g/personal/ngshah3_myseneca_ca/EcxyjUsbjNhGg10tMObG-xQBX9g9gIM3cgyUCJCMDyKMpA?e=VzU8JM&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="details-container color-container"
+            data-category="fullstack"
+          >
+            <h2 class="experience-sub-title project-title">
+              Blog Web Application
+            </h2>
+            <p>
+              The Blog Web Application allows users to upload photos, create and
+              categorize blog posts, and manage content.
+            </p>
+            <br />
+            <p>
+              <strong>Technologies:</strong> Node.js, Express.js, AJAX,
+              Handlebars, Postgres SQL, MongoDB, jQuery
+            </p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NishitShah18/Blog-Web-Application'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://seneca-my.sharepoint.com/:v:/g/personal/ngshah3_myseneca_ca/Ecb4jCbzlWRAnW1s7vUQAHgBvfy_qcsL3GUywDmgCPRHXg?e=8b4NuY&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div
+            class="details-container color-container"
+            data-category="fullstack"
+          >
+            <h2 class="experience-sub-title project-title">Club Hub</h2>
+            <p>
+              Developed Club-Hub, a full-stack web application designed to
+              streamline and enhance student engagement at an imaginary Maple
+              Leaf Public School.
+            </p>
+            <br />
+            <p>
+              <strong>Technologies:</strong> React.js, Node.js, Express.js,
+              MongoDB, Handlebars (HBS), AWS S3, Docker, Git, CI/CD, bcrypt,
+              dotenv, Mongoose, Multer
+            </p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NishitShah18/Club-Hub'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1HSSU-R78t4o1RxMyYCjtzJMps9-wqv9t/view?usp=sharing'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div
+            class="details-container color-container"
+            data-category="backend"
+          >
+            <h2 class="experience-sub-title project-title">
+              Fragments Microservices
+            </h2>
+            <p>
+              API for the Fragments Microservice, a cloud-based microservice
+              developed for a fictional Canadian manufacturing company.
+            </p>
+            <br />
+            <p>
+              <strong>Technologies:</strong> Node.js, Express.js, AWS, Docker,
+              CI/CD, GitHub Actions, Jest
+            </p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NishitShah18/fragments-Microservices'"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div
+            class="details-container color-container"
+            data-category="backend"
+          >
+            <h2 class="experience-sub-title project-title">Maze Solver</h2>
+            <p>
+              A Python-based maze solver, developed as part of the DSA456 course
+              assignment. The maze solver reads a maze from a text file and
+              attempts to find a solution using a specified algorithm.
+            </p>
+            <br />
+            <p>
+              <strong>Technologies:</strong> Python 3.x, File I/O, Pathfinding
+              Algorithms
+            </p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NishitShah18/Maze-Solver'"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div class="details-container color-container" data-category="ios">
+            <h2 class="experience-sub-title project-title">Movie App</h2>
+            <p>
+              An iOS app built with Swift, allowing users to search and discover
+              movies, view details, and manage their watchlist.
+            </p>
+            <br />
+            <p><strong>Technologies:</strong> Swift, Xcode, UIKit, Core Data</p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NishitShah18/Movie-App'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://seneca-my.sharepoint.com/:v:/g/personal/ngshah3_myseneca_ca/ET0v0D06q8xLmlOmD93ORLUBE2BC-NxUXo7dBVf0aT9ybw?e=mq2vmb&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div class="details-container color-container" data-category="ios">
+            <h2 class="experience-sub-title project-title">
+              Student Registration System
+            </h2>
+            <p>
+              The IOS app is designed to streamline the college admission
+              process by allowing users to fill out registration forms across
+              multiple screens and view a summary of their data upon completion
+              utilising Swift.
+            </p>
+            <br />
+            <p><strong>Technologies:</strong> Swift, Xcode, UIKit</p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NishitShah18/Student-Registration'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://seneca-my.sharepoint.com/:v:/g/personal/ngshah3_myseneca_ca/Ecr8HVr-l8ZMu3ubw6Hh5k0BVfIyGvu6ui82CjhnCEgD8A?e=ziMTKr&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 9 -->
+          <div
+            class="details-container color-container"
+            data-category="fullstack"
+          >
+            <h2 class="experience-sub-title project-title">Sudoku Game</h2>
+            <p>A sudoku game to improve my css, html and javascript skills</p>
+            <br />
+            <p><strong>Technologies:</strong> HTML, CSS and JavaScript</p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NishitShah18/Sudoku-Game'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://nishitshah18.github.io/Sudoku-Game/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 10 -->
+          <div class="details-container color-container" data-category="ios">
+            <h2 class="experience-sub-title project-title">
+              Tax Management App
+            </h2>
+            <p>
+              A Swift-based iOS app for efficient tax management, allowing users
+              to track, calculate, and manage personal taxes seamlessly.
+            </p>
+            <br />
+            <p><strong>Technologies:</strong> Swift, Xcode, UIKit, Core Data</p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NishitShah18/Tax-Management-App'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://seneca-my.sharepoint.com/:v:/g/personal/ngshah3_myseneca_ca/ERkP5fgskfVLh-8HJ-x9dsIBu01Kqpg6sTLx_dZ2nprFOw?e=0go2Wm&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 11 -->
+          <div
+            class="details-container color-container"
+            data-category="fullstack"
+          >
+            <h2 class="experience-sub-title project-title">Travel API</h2>
+            <p>
+              A travel advisor web application using Google Maps API for
+              location services.
+            </p>
+            <br />
+            <p>
+              <strong>Technologies:</strong> React, Node.js, Google Maps API,
+              RapidAPI
+            </p>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NishitShah18/Travel-API'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://travel-api-coral.vercel.app'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:nishitgshah2511@gmail.com"
+              >nishitgshah2511@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/nishit-shah-043518229/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Nishit Shah. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
